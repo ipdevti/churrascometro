@@ -6,6 +6,7 @@
 let inputAdults = document.getElementById("adults");
 let inputChildren = document.getElementById("children");
 let inputDuration = document.getElementById("duration");
+let inputCalculate = document.getElementById("calculate");
 let result = document.getElementById("result");
 
 function meatPerPerson(duration) {
@@ -45,3 +46,5 @@ function calculate() {
     result.innerHTML += `<p>${totalBeer / 350} Latas 350ml de Cerveja`;
     result.innerHTML += `<p>${totalSoda / 2000} Garrafas 2L de Refrigerante`;
 }
+
+inputCalculate.addEventListener("click", calculate);
